@@ -86,10 +86,10 @@ CREATE TABLE tasks (
 ## 📝 Plan de Trabajo - TODO List
 
 ### Fase 1: Configuración Inicial y Repositorios
-- [ ] Crear repositorios en GitHub
-  - [ ] Repositorio backend
-  - [ ] Repositorio frontend
-  - [ ] Repositorio principal (docs)
+- [x] Crear repositorios en GitHub
+  - [x] Repositorio backend: https://github.com/AndresVegaP/back-prueba-tecnica
+  - [x] Repositorio frontend: https://github.com/AndresVegaP/front-prueba-tecnica
+  - [x] Repositorio principal (docs): https://github.com/AndresVegaP/docs-prueba-tecnica
 - [x] Configurar Git en cada carpeta
 - [x] Crear ramas principales (main)
 
@@ -169,9 +169,9 @@ CREATE TABLE tasks (
 ## 🚀 Próximos Pasos
 
 1. **✅ Verificar herramientas instaladas**
-2. **🔄 Crear repositorios en GitHub** (PENDIENTE: necesito tu username de GitHub)
+2. **✅ Crear repositorios en GitHub**
 3. **✅ Configurar Git en cada carpeta**
-4. **⏳ Iniciar desarrollo del backend**
+4. **🔄 Iniciar desarrollo del backend**
 
 ## 📊 Progreso Actual
 
@@ -181,15 +181,21 @@ CREATE TABLE tasks (
 - [x] Verificación de herramientas instaladas
 - [x] Configuración de Git en todas las carpetas
 - [x] Creación de ramas main
+- [x] Creación de repositorios en GitHub
 
 ### 🔄 En Proceso
-- [ ] Creación de repositorios en GitHub
+- [ ] Desarrollo del backend (CodeIgniter)
 
 ### ⏳ Pendiente
-- [ ] Desarrollo del backend (CodeIgniter)
 - [ ] Desarrollo del frontend
 - [ ] Configuración de Docker
 - [ ] Implementación de pruebas unitarias
+
+## 🔗 Enlaces de Repositorios
+
+- **Backend:** https://github.com/AndresVegaP/back-prueba-tecnica
+- **Frontend:** https://github.com/AndresVegaP/front-prueba-tecnica
+- **Documentación:** https://github.com/AndresVegaP/docs-prueba-tecnica
 
 ---
 
