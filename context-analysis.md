@@ -93,10 +93,20 @@ CREATE TABLE tasks (
 - [x] Configurar Git en cada carpeta
 - [x] Crear ramas principales (main)
 
-### Fase 2: Backend Development
+### Fase 2: Configuración de Base de Datos
+- [x] Instalar PostgreSQL localmente
+- [x] Crear base de datos local
+- [x] Crear tabla tasks con estructura requerida
+- [x] Insertar datos de prueba
+- [x] Configurar Docker para PostgreSQL
+- [x] Crear script de inicialización de base de datos
+- [x] Configurar variables de entorno para DB
+- [x] Probar conexión a base de datos
+
+### Fase 3: Backend Development (CodeIgniter)
 - [ ] Configurar CodeIgniter 4
 - [ ] Configurar Docker para backend
-- [ ] Configurar PostgreSQL
+- [ ] Conectar backend con PostgreSQL
 - [ ] Crear modelo Task
 - [ ] Crear controlador TasksController
 - [ ] Implementar endpoints API
@@ -104,7 +114,7 @@ CREATE TABLE tasks (
 - [ ] Crear migraciones de base de datos
 - [ ] Implementar pruebas unitarias (PHPUnit)
 
-### Fase 3: Frontend Development
+### Fase 4: Frontend Development
 - [ ] Crear estructura HTML
 - [ ] Diseñar interfaz CSS
 - [ ] Implementar JavaScript para AJAX
@@ -112,9 +122,9 @@ CREATE TABLE tasks (
 - [ ] Implementar validaciones
 - [ ] Optimizar UX/UI
 
-### Fase 4: Integración y Docker
-- [ ] Crear docker-compose.yml
-- [ ] Configurar servicios (app + db)
+### Fase 5: Integración y Docker Compose
+- [ ] Crear docker-compose.yml completo
+- [ ] Configurar servicios (app + db + frontend)
 - [ ] Configurar variables de entorno
 - [ ] Probar integración completa
 - [ ] Optimizar configuración Docker
@@ -182,13 +192,19 @@ CREATE TABLE tasks (
 - [x] Configuración de Git en todas las carpetas
 - [x] Creación de ramas main
 - [x] Creación de repositorios en GitHub
+- [x] Configuración completa de PostgreSQL local
+- [x] Creación de base de datos y tabla tasks
+- [x] Configuración de scripts de inicialización
+- [x] Creación de documentación de base de datos
+- [x] Configuración de .gitignore
+- [x] Creación de README.md completo para backend
 
 ### 🔄 En Proceso
 - [ ] Desarrollo del backend (CodeIgniter)
 
 ### ⏳ Pendiente
 - [ ] Desarrollo del frontend
-- [ ] Configuración de Docker
+- [ ] Configuración de Docker Compose
 - [ ] Implementación de pruebas unitarias
 
 ## 🔗 Enlaces de Repositorios
@@ -196,6 +212,67 @@ CREATE TABLE tasks (
 - **Backend:** https://github.com/AndresVegaP/back-prueba-tecnica
 - **Frontend:** https://github.com/AndresVegaP/front-prueba-tecnica
 - **Documentación:** https://github.com/AndresVegaP/docs-prueba-tecnica
+
+## 📁 Estructura de Archivos Actualizada
+
+### Backend (`back-prueba-tecnica/`)
+```
+├── docker/               # Archivos específicos de Docker
+│   └── init.sql         # Script de inicialización automática
+├── .gitignore           # Archivos a ignorar en Git
+├── .env.example         # Variables de entorno de ejemplo
+├── database_setup.sql   # Script de configuración local
+├── README.md            # Documentación completa del backend
+└── (futuros archivos de CodeIgniter)
+```
+
+### Documentación (`docs/`)
+```
+├── context-analysis.md  # Análisis y progreso del proyecto
+└── DATABASE.md         # Documentación específica de base de datos
+```
+
+## 🗄️ Configuración de Base de Datos
+
+### Estado Actual
+- ✅ PostgreSQL 15.x instalado y funcionando
+- ✅ Base de datos `todo_app` creada
+- ✅ Tabla `tasks` con estructura requerida
+- ✅ Datos de prueba insertados
+- ✅ Índices de optimización creados
+
+### Estructura de la Tabla
+```sql
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+### Datos de Prueba
+- Complete requirements analysis
+- Set up development environment
+- Implement API endpoints
+- Create user interface
+- Perform unit testing
+
+## 🔧 Configuraciones Implementadas
+
+### Variables de Entorno
+- Configuración para desarrollo local
+- Configuración para Docker
+- Separación de entornos (dev/prod)
+
+### Scripts de Inicialización
+- `database_setup.sql`: Para desarrollo local
+- `docker/init.sql`: Para inicialización automática en Docker
+
+### Seguridad
+- `.gitignore` configurado para excluir archivos sensibles
+- Variables de entorno separadas de código
+- Documentación de configuración completa
 
 ---
 
