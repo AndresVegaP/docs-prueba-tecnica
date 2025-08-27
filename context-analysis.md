@@ -10,6 +10,9 @@
 
 Desarrollar una aplicación web monolítica para gestión de tareas (to-do list) con backend en CodeIgniter y frontend en HTML/CSS/JavaScript puro, utilizando Docker para containerización y PostgreSQL como base de datos.
 
+### 📋 Descripción del Desafío
+Esta prueba técnica está diseñada para evaluar habilidades en las tecnologías y lenguajes clave del stack. Se valora más la **calidad del código** y la **claridad de la solución** que la velocidad de entrega.
+
 ## 📊 Criterios de Evaluación
 
 ### 1. Calidad del Código
@@ -62,12 +65,14 @@ prueba-tecnica/
 ### Base de Datos
 ```sql
 CREATE TABLE tasks (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     completed BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+
+**Nota:** PostgreSQL usa `SERIAL` en lugar de `AUTO_INCREMENT` (MySQL), pero mantiene exactamente la misma funcionalidad de auto-incremento. El PDF especifica `AUTO_INCREMENT` pero PostgreSQL requiere `SERIAL` para la misma funcionalidad.
 
 ### Endpoints API (Backend)
 1. `GET /tasks` - Listar todas las tareas
@@ -176,6 +181,10 @@ CREATE TABLE tasks (
 - Git Flow Workflow
 - Docker Best Practices
 
+## 📄 Documento Original
+- **PDF de la Prueba Técnica:** `docs/Prueba Técnica Fullstack Backend.pdf`
+- **Contenido:** Especificaciones completas del desafío, criterios de evaluación y requisitos técnicos
+
 ## 🚀 Próximos Pasos
 
 1. **✅ Verificar herramientas instaladas**
@@ -273,6 +282,20 @@ CREATE TABLE tasks (
 - `.gitignore` configurado para excluir archivos sensibles
 - Variables de entorno separadas de código
 - Documentación de configuración completa
+
+## 🎯 Enfoque de Desarrollo
+
+### Metodología
+- **Desarrollo incremental:** Base de datos → Backend → Frontend → Integración
+- **Documentación continua:** Mantenimiento del contexto en tiempo real
+- **Buenas prácticas:** Código en inglés, comentarios en español
+- **Testing:** Pruebas unitarias desde el inicio
+
+### Estándares de Calidad
+- **Código:** PSR-12, nombres descriptivos en inglés
+- **Comentarios:** Español, concisos y descriptivos
+- **UI/UX:** Textos en español, interfaz intuitiva
+- **Documentación:** Completa y actualizada
 
 ---
 
